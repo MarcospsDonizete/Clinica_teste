@@ -13,7 +13,8 @@ import javax.persistence.Table;
 @Table(name="profissionais")
 public class Profissionais implements Serializable{
 	private static final long serialVersionUID = 3928690242781860136L;
-	@Id
+
+	@Id()
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id_profissional;
 	
